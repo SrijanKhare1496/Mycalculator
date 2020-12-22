@@ -24,7 +24,7 @@ project i write my code for project requirment , then i create a git repository 
 After creating cordova :
  *so open project in Visual Studio code and  write your code according to your project requirement and run it.*
       
-**Note** *for this code i did some changes on meta tag for run this project sucessfully.*
+**Note:-** *for this code i did some changes on meta tag for run this project sucessfully.*
 
 
 
