@@ -6,6 +6,7 @@
 ##### In Summary :-
   Hello my name is *SRIJAN* and i created this project and i am sharing my experience  how i create the project. For this first i create cordova project and then in cordova 
 project i write my code for project requirment , then i create a git repository and clone the repository after this  i add and commit and pushed  project in git repository.  
+      *In future i will update this project in fully functioning calculator.*
 
 ### Steps For creating this Project.
  ##### Required things:
