@@ -25,10 +25,11 @@ document.addEventListener('deviceready', onDeviceReady, false);
 
 function addsum()
 {
-    var a = parseInt( document.getElementByID("number1").value);
-  var b = parseInt( document.getElementByID("number2").value);
-    var c = a + b; 
-    document.getElementByID("result1").innerHTML=c;
+    var a = document.getElementById('number1').value;
+    var b = document.getElementById('number2').value;
+    var c = 0; 
+    c = Number(a) + Number(b);
+    document.getElementById('result1').innerHTML=c;
 }
 
 function onDeviceReady() {
