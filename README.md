@@ -1,8 +1,7 @@
 
 # Mycalculator
-   This is the simple addition program using cordova.
-
-
+   This is the simple program where we perform basic addition,substraction,multiplication or division by using cordova.
+   
 ##### In Summary :-
   Hello my name is *SRIJAN* and i created this project and i am sharing my experience  how i create the project. For this first i create cordova project and then in cordova 
 project i write my code for project requirment , then i create a git repository and clone the repository after this  i add and commit and pushed  project in git repository.  
@@ -24,7 +23,10 @@ project i write my code for project requirment , then i create a git repository 
 After creating cordova :
  *so open project in Visual Studio code and  write your code according to your project requirement and run it.*
       
-**Note:-** *for this code i did some changes on meta tag for run this project sucessfully.*
+~~**Note:-** *for this code i did some changes on meta tag for run this project sucessfully.*~~  **Dont change any meta Tag.**
+**********************************************
+
+**Note:**  *In cordova inline function is not supported.* so for this we have to do call it by *document.getElementById(~~'subnum'~~**"Id"**).addEventListener(~~'click'~~ **"Event"**, ~~sub~~ **"Function"**);*
 
 
 
