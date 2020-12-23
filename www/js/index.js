@@ -23,20 +23,48 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 
-function addsum()
-{
-    var a = document.getElementById('number1').value;
-    var b = document.getElementById('number2').value;
-    var c = 0; 
-    c = Number(a) + Number(b);
-    document.getElementById('result1').innerHTML=c;
-}
 
 function onDeviceReady() {
-     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-     document.getElementById('deviceready').classList.add('ready');
 
-   
-   
+document.getElementById('addnum').addEventListener('click',sum);
+    function sum()
+    {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+        var c = 0; 
+        c = Number(a) + Number(b);
+        document.getElementById('result1').innerHTML= "Addition: "+c;
+    }
+
+document.getElementById('subnum').addEventListener('click',sub);
+    function sub()
+    {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+        var c = 0; 
+        c = Number(a) - Number(b);
+        document.getElementById('result1').innerHTML="Subtraction: "+c;
+    }
+
+document.getElementById('multinum').addEventListener('click',multi);
+    function multi()
+    {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+        var c = 0; 
+        c = Number(a) *  Number(b);
+        document.getElementById('result1').innerHTML="Multiplication: "+c;
+    }
+
+document.getElementById('divnum').addEventListener('click',div);
+    function div()
+    {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+        var c = 0; 
+        c = Number(a) / Number(b);
+        document.getElementById('result1').innerHTML="Division: "+c;
+    }    
+
 }
 

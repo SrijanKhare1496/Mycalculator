@@ -29,7 +29,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -42,15 +42,17 @@
             <h1>My Calculator</h1>
             <div id="deviceready" >
                 <label>number 1</label>
-            <input type="number" name="number1" id="number1" placeholder="enter number"> <br>
-            + <br>
+            <input type="text" name="number1" id="number1" placeholder="enter number"> <br>
             <label>number 2</label>
-            <input type="number" name="number2" id="number2" placeholder="enter  number"><br>
-            <button onclick="addsum();" >ADD</button><br><br>
+            <input type="text" name="number2" id="number2" placeholder="enter  number"><br>
+            <button id="addnum" >ADD</button>
+            <button id="subnum" >SUB</button> <br>
+            <button id="multinum" >MULTIPLY</button>
+            <button id="divnum" >DIVISION</button>
+            <br><br>
             <label>result:</label>
             <p id="result1"></p>
-                <!-- <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p> -->
+                
             </div>
         </div>
         <script src="cordova.js"></script>
